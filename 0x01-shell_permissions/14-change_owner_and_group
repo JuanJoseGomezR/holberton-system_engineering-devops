@@ -1,2 +1,2 @@
 #!/bin/bash
-chown betty:holberton otherfiles
+chown --from=betty:holberton
