@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -m in depth 1 -type d | wc -1
+find . ! -path . -type d | wc -1
