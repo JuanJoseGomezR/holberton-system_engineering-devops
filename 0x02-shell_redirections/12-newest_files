@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -Atr1 | tail -n 10
+ls -Atr1 | head -n 10
