@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Differents countries
+
+i=1
+
+while [ $i -lt 21 ]
+do
+	case "$i" in
+		5) printf "bad luck from China\n";;
+		10) printf "bad luck from Japan\n";;
+		18) printf "bad luck from Italy\n";;
+	esac
+	echo "$i"
+	(( i++ ))
+done
