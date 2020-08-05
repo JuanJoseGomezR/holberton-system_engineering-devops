@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
-# Installs nginx on your server
+# Install nginx on your web-01server
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo ufw allow 'Nginx HTTP'
-echo "Holberton School" >> sudo tee /usr/share/nginx/html/index.html
+echo "Holberton School" >> /var/www/html/index.html
 sudo service nginx start
