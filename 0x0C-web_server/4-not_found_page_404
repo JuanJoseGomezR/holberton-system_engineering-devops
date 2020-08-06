@@ -3,5 +3,6 @@
 sudo apt-get -y update
 sudo apt-get -y install nginx
 echo "Ceci n'est pas une page" > /var/www/html/404.html
-sed -i '/listen 80 default_server;/ a \\t404 err /404.html;' /etc/nginx/sites-available/default
-sudo service nginx restart
+sed -i '/listen 80 default_server/a \\terror_page 404 /404.html;' /etc/nginx/sites-available/default
+sudo service nginx reload
+sudo service nginx start
