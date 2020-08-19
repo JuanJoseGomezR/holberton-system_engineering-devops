@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# information about sub domains
+# SCRIPT DISPLAYS information about sub domains
+
 display_info ()
 {
     domain="$1"
@@ -14,6 +15,7 @@ then
     do
         display_info "$1" "$subdomain"
     done
-else
+elif [ "$#" == 2 ]
+then
     display_info "$1" "$2"
 fi
