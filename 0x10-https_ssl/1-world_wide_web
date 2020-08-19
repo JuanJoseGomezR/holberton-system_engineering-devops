@@ -10,7 +10,8 @@ display_info ()
 
 if [ "$#" == 1 ]
 then
-    for subdomain in www lb-01 web-01 web-02; do
+    for subdomain in "www" "lb-01" "web-01" "web-02"
+    do
         display_info "$1" "$subdomain"
     done
 else
