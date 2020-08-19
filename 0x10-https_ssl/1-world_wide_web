@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # information about sub domains
-
 display_info ()
 {
     domain="$1"
