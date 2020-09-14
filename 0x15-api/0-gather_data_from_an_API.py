@@ -21,11 +21,11 @@ if __name__ == "__main__":
                 done_tasks += 1
 
     st_line = 'Employee {} is done with tasks({}/{}):'.format(get_name,
-                                                                done_tasks,
-                                                                all_tasks)
+                                                              done_tasks,
+                                                              all_tasks)
     print(st_line)
     for i in todos:
         if str(i.get('userId')) == get_ID:
             if i.get('completed') is True:
-                get_TITLE  = i.get('title')
+                get_TITLE = i.get('title')
                 print("\t " + get_TITLE)
